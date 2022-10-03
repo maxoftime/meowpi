@@ -1,5 +1,11 @@
 ---
 title: Cats inc.
 ---
-
-
+<ul>
+{% for cat in cats %}
+    <li>
+        <p>Name: {{ cat.name }}</p>
+        <p>Cuteness: {{ cat.cutenessLevel }}</p>
+    </li>
+{% endfor %}
+</ul>
